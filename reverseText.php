@@ -9,7 +9,7 @@
          <div>
            <input type="submit" name="submit" value="kirim"/>
          </div>
-       </from>
+       </form>
      </div>
    </body>
 </html>
