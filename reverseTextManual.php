@@ -42,41 +42,7 @@
           $textReversed = $kata . $textReversed;
         }
       }
-      // echo $str[$i];
-      // echo $i.". ".$textReversed."</br>";
     }
-    // echo $textReversed;
-
-    // foreach ($arrayText as $huruf) {
-    //   if (ctype_space($huruf) || $huruf === '') {
-    //     $spasi .= $huruf;
-    //     $textReversed = $kata . $textReversed;
-    //     $kata = null;
-    //   } else {
-    //     $kata .= $huruf;
-    //     $textReversed = $spasi . $textReversed;
-    //     $spasi = null;
-    //   }
-    //   echo $textReversed.",";
-    // }
-    // ========
-    // for ($i=count($arrayText)-1; $i >= 0 ; $i--) {
-    //   if (ctype_space($arrayText[$i]) || $arrayText[$i] === '') {
-    //     $spasi .= $arrayText[$i];
-    //     $textReversed .= $kata;
-    //     $kata = null;
-    //   } else {
-    //     $kata .= $arrayText[$i];
-    //     $textReversed .= $spasi;
-    //     $spasi = null;
-    //   }
-    // }
-    // echo $kata;
-    // echo $spasi;
     echo "<pre>$textReversed</pre>";
-    // print_r($arrayText);
-    // $arrayReversed = array_reverse(explode(" ",$str));
-    // $textReversed = implode(" ",$arrayReversed);
-    // echo $textReversed;
   }
  ?>
