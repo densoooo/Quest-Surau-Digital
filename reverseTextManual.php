@@ -22,24 +22,24 @@
     $spasi = null;
     $textReversed = null;
 
-    for ($i=0; $i < strlen($str); $i++) {
-      if ($i != strlen($str)-1) {
+    for ($i=strlen($str)-1; $i >=0; $i--) {
+      if ($i != 0) {
         if (ctype_space($str[$i]) || $str[$i] === '') {
-          $spasi .= $str[$i];
-          $textReversed = $kata . $textReversed;
+          $spasi = $str[$i] . $spasi;
+          $textReversed .= $kata;
           $kata = null;
         } else {
-          $kata .= $str[$i];
-          $textReversed = $spasi . $textReversed;
+          $kata = $str[$i] . $kata;
+          $textReversed .= $spasi;
           $spasi = null;
         }
       } else {
         if (ctype_space($str[$i]) || $str[$i] === '') {
-          $spasi .= $str[$i];
-          $textReversed = $spasi . $textReversed;
+          $spasi = $str[$i] . $spasi;
+          $textReversed .= $spasi;
         } else {
-          $kata .= $str[$i];
-          $textReversed = $kata . $textReversed;
+          $kata = $str[$i] . $kata;
+          $textReversed .= $kata;
         }
       }
     }
