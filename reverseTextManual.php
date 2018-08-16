@@ -17,7 +17,6 @@
 <?php
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $str = $_POST['text'];
-    $arrayText = str_split($str);
     $kata = null;
     $spasi = null;
     $textReversed = null;
